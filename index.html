@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyShop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .category-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .category {
+            text-align: center;
+            width: 150px;
+            padding: 10px;
+            background: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .category:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .category img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .category p {
+            font-size: 1rem;
+            font-weight: bold;
+            color: #333;
+            font-family: 'Kanit', Arial, sans-serif;
+        }
+
+        .product-category {
+            margin-top: 50px;
+        }
+
+        .product-category h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            font-family: 'Kanit', Arial, sans-serif;
+            color: #333;
+        }
+
+        .marquee {
+            text-align: center;
+            background: #f8f9fa;
+            padding: 10px;
+            font-family: 'Kanit', Arial, sans-serif;
+            font-size: 1.2rem;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">MyShop</div>
+        <div class="search-bar">
+            <input type="text" placeholder="ค้นหาสินค้า...">
+            <button>ค้นหา</button>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="page2.html">Contact</a>
+                <li><a href="Address.html">log-in</a></li>
+                <li><a href="register.html">register</a></li>    
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Marquee -->
+    <div class="marquee">
+        <p>ยินดีต้อนรับสู่ MyShop! สินค้าคุณภาพ ราคาถูกใจ โดนบิดเเน่นอนรับรองได้??</p>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>ยินดีต้อนรับสู่ MyShop</h1>
+            <p>ค้นหาสินค้าคุณภาพ ราคาถูกใจ</p>
+            <a href="#products" class="btn">เริ่มช้อปเลย</a>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section id="categories" class="categories">
+        <h2>หมวดหมู่สินค้า</h2>
+        <div class="category-list">
+            <div class="category">
+                <a href="#clothing">
+                    <img src="https://down-th.img.susercontent.com/file/14eb48c96d2af38b43e73bd438cb4418@resize_w640_nl.webp" alt="เสื้อผ้า">
+                    <p>เสื้อผ้า</p>
+                </a>
+            </div>
+            <div class="category">
+                <a href="#electronics">
+                    <img src="https://down-th.img.susercontent.com/file/c1c3ef22b08e9e92a820238900edc982@resize_w640_nl.webp" alt="อุปกรณ์อิเล็กทรอนิกส์">
+                    <p>อุปกรณ์อิเล็กทรอนิกส์</p>
+                </a>
+            </div>
+            <div class="category">
+                <a href="#home">
+                    <img src="https://down-th.img.susercontent.com/file/th-11134258-7r98y-lx7uver450og9e@resize_w640_nl.webp" alt="ของใช้ในบ้าน">
+                    <p>ของใช้ในบ้าน</p>
+                </a>
+            </div>
+            <div class="category">
+                <a href="#food">
+                    <img src="https://down-th.img.susercontent.com/file/ef3225f54d2d375247837391cf743e93@resize_w640_nl.webp" alt="อาหารและเครื่องดื่ม">
+                    <p>อาหารและเครื่องดื่ม</p>
+                </a>
+            </div>
+            <div class="category">
+                <a href="#cosmetics">
+                    <img src="https://down-th.img.susercontent.com/file/dad0e4f4f94ab4a75392ebf587af5bf0@resize_w640_nl.webp" alt="เครื่องสำอาง">
+                    <p>เครื่องสำอาง</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="products" class="products">
+        <h2>สินค้าของเรา</h2>
+
+        <div id="clothing" class="product-category">
+            <h3>เสื้อผ้า</h3>
+            <div class="product-list">
+                <div class="product">
+                    <img src="https://th.bing.com/th/id/OIP.CEAmc0Re__olVnz3oVGMlwHaHa?w=177&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="เสื้อยืด">
+                    <h3>เสื้อยืด</h3>
+                    <p>ราคา: 500 บาท</p>
+                    <p>⭐⭐⭐⭐☆ (4.5)</p>
+                    <a href="shirt.html" target="_blank">
+                        <button>ไปยังร้านค้า</button>
+                    </a>
+                </div>
+                <div class="product">
+                    <img src="https://img.lazcdn.com/g/p/5c417a1cbb3ee2d0a1a55780ef4e433d.jpg_400x400q75.avif" alt="กางเกงยีนส์">
+                    <h3>กางเกงยีนส์</h3>
+                    <p>ราคา: 800 บาท</p>
+                    <p>⭐⭐⭐⭐⭐ (5.0)</p>
+                    <a href="jeans.html" target="_blank">
+                        <button>ไปยังร้านค้า</button>
+                    </a>
+                </div>
+                <div class="product">
+                    <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ4zNPG14rg5oZwZxZiaQtTl_mFEUGLNJ4RuKaJ4j26zLUhR_UyBAcGC9MbZs6iZPQcO1XowW2kExmxpGU_gd-jSqZWPogJ5LESMOM6eTbrmjEdCekejVAoPg" alt="กระโปรง">
+                    <h3>กระโปรง</h3>
+                    <p>ราคา: 700 บาท</p>
+                    <p>⭐⭐⭐⭐☆ (4.3)</p>
+                    <a href="skirt.html" target="_blank">
+                        <button>ไปยังร้านค้า</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="electronics" class="product-category">
+            <h3>อุปกรณ์อิเล็กทรอนิกส์</h3>
+            <div class="product-list">
+                <div class="product">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3KJXQb-s5HCU9_ZasVmGBXae7osGOxGefqF5W8DScwXvc08mQtg&s=10&ec=72940545" alt="หูฟังไร้สาย">
+                    <h3>หูฟังไร้สาย</h3>
+                    <p>ราคา: 1,200 บาท</p>
+                    <p>⭐⭐⭐⭐⭐ (5.0)</p>
+                    <a href="earphones.html" target="_blank">
+                        <button>ไปยังร้านค้า</button>
+                    </a>
+                </div>
+                <div class="product">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_SKU7RkvlY-Gm1oOVPCD38vXY7V0r9LWJ0GDRx_5-XL_HKqNUCw&s=10&ec=72940545" alt="สมาร์ทโฟน">
+                    <h3>สมาร์ทโฟน</h3>
+                    <p>ราคา: 15,000 บาท</p>
+                    <p>⭐⭐⭐⭐☆ (4.8)</p>
+                    <a href="Smartphone.html" target="_blank">
+                        <button>ไปยังร้านค้า</button>
+                    </a>
+                </div>
+                <div class="product">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz1uDmm-tSpu-r4X6a-UhvkKoPc4Wnvnd27Oo3GaHlPzH5kg1RnA&s=10&ec=72940545" alt="แท็บเล็ต">
+                    <h3>แท็บเล็ต</h3>
+                    <p>ราคา: 10,000 บาท</p>
+                    <p>⭐⭐⭐⭐☆ (4.6)</p>
+                    <a href="tablet.html" target="_blank">
+                        <button>ไปยังร้านค้า</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="home" class="product-category">
+            <h3>ของใช้ในบ้าน</h3>
+            <div class="product-list">
+                <div class="product">
+                    <img src="https://www.bing.com/th/id/OIP.u-7fgbnh9dCaczCoJMW_gwHaHa?w=150&h=150&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="โคมไฟ">
+                    <h3>โคมไฟ</h3>
+                    <p>ราคา: 300 บาท</p>
+                    ⭐⭐⭐⭐☆ (4.3)</p>
+                    <a href="lamp.html" target="_blank">
+                        <button>ไปยังร้านค้า</button>
+                    </a>
+
+                </div>
+                <div class="product">
+                    <img src="https://th.bing.com/th/id/OIP.X8pgZ-_4iig1ZOXhmq5yewHaFA?w=263&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="พรมปูพื้น">
+                    <h3>พรมปูพื้น</h3>
+                    <p>ราคา: 1,000 บาท</p>
+                    <p>⭐⭐⭐⭐⭐ (5.0)</p>
+                    <a href="carpet.html" target="_blank">
+                        <button>ไปยังร้านค้า</button>
+                    </a>
+                </div>
+                <div class="product">
+                    <img src="data:image/webp;base64,UklGRi4DAABXRUJQVlA4ICIDAAAwGwCdASqvAI4APj0cikOiIaEVWm2EIAPEtIHYD2woncMzwna5QgB+m4KSw5eTPN/kgWhanXK410JIHWzYHygF3DArVDakMElbAeFFv2GabOOVH30diogqjaCwHz9iPzjSbmMe5njqUU+gJnTNfpR8JDewY5RWaTblw1NjgJYAkRtFuGHwyCDZs8dSQ83Bj2/7aJaMjrT2F5iLNBKbnLCwajmWhDFS+YAA392Q/GtV6/Ugw9msD0CAoSQhV907O1BtoWcT5HXYLtPwryUz17A36AB+V91DriZB7ZPl4b2kNLXAAP7/orz8oG9NA0Duphbm7/khmPgwEcyBvvHp8BGVBcS1r0Xcf8k+L8+EIcBskXdIfYv7MCPfRBxv8If+t+T//APPwG6VyfZ/ZRxvGLB1QQmWU4ewER2KsL4CiibWtvfLO3+UA9Z6ulJt/yL5n1LnE5B/Gsci/3LSukCK120+fabSgtjvCqZfukCNVmlw5JYlyRmpoTgvACPYmG/0ORw2PUM1fNf72fv4FfWayAenahzAeHema+FbtzWaoZ3exBrYflaL3c5C4iXYqg2YwYtBEGT4Mr1yJ94lcu2piGxDPmvW1Xz092GAPBbzqSTagke4N54BForJsJpmeLfHnk7/35vIKH47ub1yhcIZphYkUkhhqkcvTfzYcRmjmw70qv1qCSsSDOwMLYAiwCwACJJ6HWlZScZy7x+DrTs0TpkCDIK9hJVaYb9olbDkj/pg7jknwpDyQB2Sg0dpYhC+U3GhquBM1HQ3ezzuAcO85PtiVdgLEInoP9dJw60JlLQHgqF8oNuR4ykIjuckYwq7MXhfCr7/aN7hs6pz/1zhQy49yb/4+TbBt/mmn0dKdHbo+hhZTeAZAzjb+upgP4Hgl/+osT1DP+s/bfEf1aBSd7yL5c53Foj/oBwD/JR+I7miVddg+nRGLXNNWQW+LBrUpfdt1qTx0EyEp/PUfmAY/nvl/W37fE94FIjtu4ABIvh79288en4BII53BAPL9fmk6o7AZNvXrzO9KPDI7+f5JGRwZLp9cPae19J1aXCxEbzMAAAA" alt="โต๊ะทำงาน">
+                    <h3>โต๊ะทำงาน</h3>
+                    <p>ราคา: 2,500 บาท</p>
+                    <p>⭐⭐⭐⭐☆ (4.6)</p>
+                    <a href="desk.html" target="_blank">
+                        <button>ไปยังร้านค้า</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+    <footer class="footer">
+        <p>ชอบง่ายๆ เเค่คลิกเดียว</p>
+    </footer>
+</body>
+</html>
